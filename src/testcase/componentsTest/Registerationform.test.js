@@ -12,6 +12,7 @@ test('RgisterationForm UI Input',()=>{
     render(<RgisterationForm/>)
     let testval=screen.getByRole('textbox');
     expect(testval).toBeInTheDocument();
+ 
 })
 
 test('RgisterationForm UI Input plcaceholder',()=>{
@@ -20,5 +21,7 @@ test('RgisterationForm UI Input plcaceholder',()=>{
 
     expect(testval).toBeInTheDocument();
     expect(testval).toHaveAttribute('id','Name');
+    expect(testval).toHaveAttribute('type','text');
+    expect(testval).toHaveAttribute('value','shashank');
 })
 
