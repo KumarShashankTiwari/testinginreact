@@ -1,4 +1,4 @@
-import sum from "../utils/sum";
+import sum from "../../utils/sum";
 
 test('testing foor sum', ()=>{
     let a=10;
